@@ -1,0 +1,651 @@
+/*Reset*/
+
+html,body{
+    width: 100%;
+    height:100%;
+}
+
+section{
+    height: 100% !important;
+}
+
+body, h1, h2, h3, p, ul{
+    padding: 0;
+    margin: 0;
+}
+
+
+/*ESTILOS GERAIS*/
+
+#subir{
+    position:fixed;
+    bottom:5px;
+    right:18px;
+    background: #5bba58 !important;
+    opacity: 0.8;
+}
+
+@font-face {
+    font-family: machine;
+   /* src: url("../fonts/cano.otf");*/
+    src: url("../fonts/time.ttf");
+
+}
+
+body{
+    font-family: "Work Sans", Arial, sans-serif;
+    color: #2D2D2D;
+   /* background-color: #EAEAEB;*/
+}
+
+.container {
+    width: 90% !important;
+}
+
+.titulo-padrao{
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    color: #724c44;
+    text-align: center;
+}
+
+.titulo-padrao:before, .titulo-padrao:after{
+    background-color: #5bba58;
+    border-radius: 50%;
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+
+
+/* .titulo-padrao:after{
+    background-color: #5bba58  ;
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    margin: 10px auto;
+
+} */
+
+.texto-padrao{
+    font-size: 1.1em !important;
+    text-align: justify;
+    color: #828282;
+    line-height: 25px;
+    margin: 10px 0;
+}
+
+.sub-titulo-padrao{
+    color: #696969;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 60px !important;
+}
+
+.btn-padrão{
+
+    background-color: #5bba58 !important;
+    color: 	#FFF !important;
+    text-transform: uppercase !important;
+    font-size: 1em !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.1em !important;
+    margin: 10px 0;
+}
+
+
+.s-icon{
+    width: 100px;
+    height: 100px;
+}
+
+.center-items {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/*-------------------------------------------------------- HEADER-------------------------------------------------------- -----------*/
+
+#top-header{
+    height: 50px;
+    /*background-color: #5bba58;*/
+    border-bottom: 1px solid #5bba58;
+}
+#top-header ul{
+  margin-right: 150px;
+}
+
+#top-header ul li{
+    display: inline-block;
+    padding:  14px;
+    border-left: 1px solid #5bba58;
+    vertical-align: middle;
+
+
+}
+
+#top-header ul li {
+    color: #724c44;
+    font-size: 0.95em;
+}
+
+#top-header .s-icon{
+
+    width: 14px;
+    height: 14px;
+}
+
+header{
+    background-image: url("../img/header2.png ");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+}
+
+
+
+
+
+/*-----------------------------------------------END HEADER-------------------------------------------------------*/
+
+
+/*---------------------------------------NAV--------------------------------------------------------------------------*/
+
+nav {
+    background: transparent;
+    height: 120px;
+    position: relative;
+    box-shadow: none;
+    z-index: 1;
+}
+
+nav a img{
+    margin-left: 20px;
+    padding: 10px ;
+    height: 250px;
+    width: 250px;
+}
+
+
+.nav-wrapper ul{
+
+    margin-top: 30px;
+    padding-right: 50px ;
+}
+
+.menu-item li a{
+    color: #2D2D2D !important;
+    font-size: 1em;
+    /*font-family: Roboto;*/
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.menu-item li a:hover{
+    color: #5bba58 !important;
+    font-weight: bold;
+    background-color: transparent;
+    transition:  all 0.5s ease-in-out !important;
+}
+
+/*---------------------------------------END NAV--------------------------------------------------------------------------*/
+
+
+/*---------------------------------!*MENU RESPONSIVO------------------------------------*!*/
+
+.sidenav li a span{
+    margin-left: 10px;
+    font-weight: bold;
+    text-transform: none;
+    font-size: 1.1em;
+}
+
+.sidenav .size-logo{
+    height: 100px;
+    width: 230px;
+    padding: 5px;
+    display: block;
+    margin: 0 auto;
+}
+.sidenav .phone{
+    margin-top: -10px !important;
+    line-height: 1.15em;
+    color: #724c44;
+    text-align: center;
+}
+#menu-responsivo .s-icon{
+    width: 25px;
+    height: 25px;
+    
+}
+
+.estilo-side-nav{
+    border-bottom: 1px solid #e0e0e0;
+    padding: 8px;
+}
+
+#menu-responsivo a:hover{
+    background: transparent;
+    color: #724c44 !important;
+    transition:  color 1s !important;
+}
+.titulo-redes-socais{
+
+    color: rgba(0,0,0,0.5);
+    font-size: 1.1em;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+}
+
+.s-socias-lateral{
+    margin: 8px;
+    width: 40px;
+    height: 40px;
+}
+
+/*---------------------------------!* END MENU RESPONSIVO------------------------------------*!*/
+
+
+/*---------------------------------!*MODAL------------------------------------*!*/
+.modal li:nth-child(2n+1) i{
+    color: #724C44 ;
+    
+}
+
+.modal li:nth-child(2n) i{
+    color: #5bba58 ;
+}
+
+/*---------------------------------!* END MODAL------------------------------------*!*/
+
+/*---------------------------------!*TABLE------------------------------------*!*/
+.collection{
+    border-radius: 10px;
+    -webkit-box-shadow: 2px 2px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    2px 2px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+    box-shadow:         2px 2px 5px 6px #ccc;
+}
+
+.collection h6{
+    color: #fafafa !important;
+    text-transform: uppercase;
+    font-weight: 800;
+    text-align: center;
+
+}
+.collection-header{
+    background-color: #724C44 !important;
+}
+
+.collection li{
+    padding: 12px !important;
+}
+.modal li:nth-child(2n+1) i{
+    color: #724C44 ;
+    
+}
+
+.modal li:nth-child(2n) i{
+    color: #5bba58 ;
+}
+
+/*---------------------------------!* END TABLE------------------------------------*!*/
+
+
+/*-----------------------------------------------SERVIÇOS-----------------------------------------------------------------*/
+
+#servicos h2{
+    margin: 90px 0 50px 0;
+}
+
+
+
+.cle{
+
+    width: 120px;
+    height: 120px;
+    border: 1px solid #d6d6d6;
+    border-radius: 50px 50px;
+}
+.card-servicos{
+
+    height: 400px;
+    max-height: 400px;
+    /* border: 1px solid #d6d6d6; */
+    border: 1px solid #ccc;
+    border-top: 2px solid #5BBA58;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 5px 0;
+}
+
+.card-servicos img{
+    padding: 15px;
+    display: block;
+    margin: 0 auto;
+}
+
+.card-servicos h3{
+
+    /*text-transform: uppercase;*/
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #724C44;
+    text-align: center;
+    margin-top: 35px;
+    font-family: "Work Sans", Arial, sans-serif;
+
+}
+
+.card-servicos p{
+
+    margin-top: 35px;
+    padding: 5px;
+    text-align: center;
+}
+
+/*-----------------------------------------------END SERVIÇOS-----------------------------------------------------------------*/
+
+
+/*-------------------------------------------------SOBRE---------------------------------------------------------------*/
+
+#sobre{
+    background-color: #efefef;
+   
+}
+
+#sobre h2{
+
+   padding-top: 30px !important;
+   margin-bottom: 30px;
+}
+ .texto-sobre{
+    color: #2d2d2d;
+    font-size: 1.2em !important;
+    text-align: justify;
+    line-height: 30px;
+    margin: 10px 0;
+ }
+
+ .img-sobre{
+     margin-top: 20px;
+ }
+.cards-sobre li {
+    display: block;
+    padding: 10px;
+    margin: 5px 0;
+  
+}
+.cards-sobre li .card{
+
+    color: #000;
+    border: 1px solid #ccc;
+    border-top: 2px solid #5BBA58;
+    margin-bottom: 20px;
+    padding: 15px;
+    height: 220px;
+    max-height: 250px;
+    background-color: #FFF;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.card h6{
+    text-align: center;
+    font-size: 1.6em;
+    color: #724C44;
+    font-weight: 900;
+}
+
+.card p{
+    color: #2d2d2d;
+    text-align: justify;
+    padding: 5px;
+    font-size: 1.07em;
+}
+
+.icon-sobre{
+    text-align: center;
+    font-size: 1em !important;
+    color: #5BBA58;
+    vertical-align: middle;
+    padding: 5px;
+}
+
+
+
+
+
+/*-------------------------------------------------END SOBRE---------------------------------------------------------------*/
+
+/*-------------------------------------------------LINKS UTEIS---------------------------------------------------------------*/
+#links-uteis h2{
+    margin: 70px 0 40px 0;
+}
+
+#links-uteis ul  li:nth-child(2n+1) i{
+    color: #724C44 ;
+}
+
+#links-uteis ul  li:nth-child(2n) i{
+    color: #5BBA58 ;
+}
+
+#links-uteis .btn-padrão{
+    margin-top: 40px;
+}
+
+
+
+/*-------------------------------------------------END LINKS UTEIS---------------------------------------------------------------*/
+
+
+/*-------------------------------------------------CONTATO---------------------------------------------------------------*/
+#contato{
+    background-color: #efefef;
+}
+
+#contato .titulo-padrao{
+    padding-top: 50px !important;
+
+
+}
+
+#contato div .sub-titulo-padrao{
+
+    padding-top: 10px !important;
+    color: #696969 ;
+
+}
+
+.contato-lista li{
+
+    font-size: 1.2em;
+    margin: 20px auto;
+    color: #010101;
+    /*font-weight: 700;*/
+}
+
+.contato-lista li i{
+
+    font-size: 1.7em;
+    margin-right: 10px !important;
+    color: #696969;
+    vertical-align: middle;
+
+}
+
+.titulo-redes{
+
+    color: #5bba58 ;
+    font-size: 1.6em;
+    font-weight: 600;
+}
+
+.logo-redes li{
+
+    display: inline-block;
+    margin: 10px 10px;
+}
+
+.logo-redes li img{
+
+    width: 30px;
+    height: 30px;
+    margin-left: 3px;
+}
+
+.contato-form{
+    padding-right: 60px;
+}
+
+
+#contato .contato-form label{
+
+    display: block;
+    font-size: 1.2em;
+    line-height: 25px;
+    margin-bottom: 4px;
+    font-weight: 700;
+    color: #724C44 !important;
+}
+
+
+#contato input[type=text]:not(.browser-default), input[type=password]:not(.browser-default),
+input[type=email]:not(.browser-default), input[type=url]:not(.browser-default),
+input[type=time]:not(.browser-default), input[type=date]:not(.browser-default),
+input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default),
+input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default),
+input[type=search]:not(.browser-default), .materialize-textarea {
+    border: 1px solid #010101 !important;
+    padding: 2px 5px !important;
+    border-radius: 4px !important;
+}
+
+#contato .contato-form textarea{
+
+    height: 120px !important;
+}
+
+#contato .contato-form button{
+
+    margin-top: 0 !important;
+}
+
+
+/*-------------------------------------------------END CONTATO---------------------------------------------------------------*/
+
+footer{
+   /* background: linear-gradient(52deg, rgba(232,229,25,1) 0%, rgba(226,3,3,1) 100%);*/
+    background-color: #724C44 !important;
+
+}
+
+.page-footer{
+
+    color: #FFF !important;
+    font-size: 1em;
+}
+
+
+
+
+
+footer .mapa-site a{
+
+    display: block;
+    margin: 5px auto !important;
+    text-decoration: none !important;
+    color: #FFF;
+    font-weight: 400;
+    text-align: left;
+
+}
+
+
+footer .mapa-site a:hover{
+
+    color: #fff;
+    transition: all 0.5s;
+
+}
+
+
+
+footer .mapa-site a i{
+
+    color: #fff !important;
+    vertical-align: middle;
+    margin-right: 8px !important;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 1em;
+
+}
+
+.social-network  li{
+
+    display: inline-block !important;
+    margin-right: 10px;
+}
+.social-network  li img{
+
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.img-footer-margem{
+    margin-bottom: -9px;
+}
+
+.titulo-footer{
+
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FFF !important;
+    font-size: 1.1em;
+    margin: 10px 0 12px 0!important;
+    display: block !important;
+    text-align: left;
+}
+
+.endereco li p{
+
+    margin: 7px 0 !important;
+}
+
+.endereco i{
+
+    vertical-align: middle;
+    margin-right: 8px !important;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.page-footer .footer-copyright div span {
+    color: #FFF !important;
+    font-size: 0.9em !important;
+}
+
+
+
